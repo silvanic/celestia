@@ -3,9 +3,14 @@ CREATE DATABASE universe;
 \c universe
 
 -- CREATE TABLE
+CREATE DATABASE universe;
+
+\c universe
+
+-- CREATE TABLE
 CREATE TABLE galaxy (
     galaxy_id SERIAL NOT NULL,
-    name VARCHAR(200) UNIQUE,
+    name VARCHAR(200) UNIQUE NOT NULL,
     age INT,
     area INT,
     description TEXT
